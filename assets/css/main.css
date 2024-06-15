@@ -1,0 +1,220 @@
+
+::selection{
+	background-color:#f6a91d;}
+	
+
+:root {
+--giallo: #E7E576;
+--azzurro: #009999;
+--rosa: #fb94ff;
+
+}
+
+body{font-family: 'Plus Jakarta Sans', sans-serif !important;}
+
+
+
+#back_to_top {
+
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    cursor: pointer;
+	z-index:10000;
+	color:#333;
+}
+
+	
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+	
+	nav.navbar{
+  background-color: var(--azzurro) !important;
+  
+}
+	
+.centratutto{
+	text-align: center;
+}
+.logo img{
+	width: 80px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.navbar-nav{
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+	color: #fb94ff;
+	transform: translateX(300px);
+}
+
+@keyframes carosello{
+	from {transform: translateX(0);}
+	to {transform: translateX(100px);}
+}
+
+.container-test{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 40px;
+}
+
+.border-test{
+	align-self: flex-end;
+}
+
+.border-test1{
+	background-color: red;
+}
+
+.border-test2{
+	background-color: blue;
+}
+
+.border-test3{
+	background-color: purple;
+}
+	
+.coloregiallo{
+	background-color: var(--giallo);
+}
+.colorerosso{
+	background-color: var(--rosa);
+}
+.coloreblu{
+	background-color: var(--blu);
+}
+
+
+
+
+
+
+	/*carousel*/
+
+
+
+
+.carosellamultiplo .carousel-inner .carousel-item.active, .carosellamultiplo .carousel-inner .carousel-item2.active,
+.carosellamultiplo .carousel-inner .carousel-item-next,
+.carosellamultiplo .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+
+.carosellamultiplo .carousel-control-prev-icon, .carosellamultiplo .carousel-control-next-icon{
+		text-align:center;}
+	.carosellamultiplo .carousel-control-prev .fas, .carosellamultiplo .carousel-control-next .fas {
+		font-size:25px;}
+.carosellamultiplo .carouselloff .card-img img{
+	width:97% !important;}
+.carosellamultiplo .card-img {
+	text-align: center !important;
+	}
+	.carosellamultiplo .carousel-control-prev {    justify-content: left !important; text-align: left !important; left: -5px !important;}
+	.carosellamultiplo .carousel-control-next {    justify-content: right !important; text-align: right !important;}
+	.carosellamultiplo .card{
+		text-align:left;
+		border:0px !important;}
+
+
+	.carosellamultiplo	.carousel-control-next, .carosellamultiplo .carousel-control-prev
+		.carosellamultiplo .carousel-control-next, .carosellamultiplo .carousel-control-prev{
+			opacity:1 !important;
+			    top: 20% !important;
+    bottom: auto !important;
+
+	}
+
+
+
+	.carosellamultiplo .carousel-control-next-icon, .carosellamultiplo .carousel-control-prev-icon{    width: 2.4rem  !important;
+    height: 2.4rem !important;
+		border-radius: 50%;
+    padding: 3px;
+    border: 3px solid #fff;
+    opacity: 1 !important;
+    background-color: #e76d21;}
+	.carosellamultiplo .carousel-control-next-icon:hover, .carosellamultiplo .carousel-control-prev-icon:hover{  background-color: #30859c;
+		}
+		.carosellamultiplo .carousel-control-prev-icon, .carosellamultiplo .carousel-control-next-icon{
+			background-image:none !important;}
+		
+		
+			.carosellamultiplo h4 a{
+				color:#31859c;
+				font-weight:800;
+				font-size:16px;
+				text-decoration:none;
+				}
+			.carosellamultiplo h4 a:hover{color: #e76d21;}
+		 .carosellamultiplo h4{
+				line-height:0.8em !important;
+				margin-bottom:15px;
+				margin-top:15px;}
+				.date{
+					font-weight:800;
+					font-size:14px;}
+					.testinooff{
+						font-size:13px;
+						font-weight:300;}
+
+				
+			
+				
+
+
+
+ .carosellamultiplo .carousel-inner .carousel-item-next {
+    display: flex;
+}
+
+.carosellamultiplo .carousel-item-next, .carosellamultiplo .carousel-item-prev, .carosellamultiplo .carousel-item.active {
+    display: block;
+}
+
+
+
+/*fine carousel*/
+	
+	
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media screen and (min-width: 770px) and (max-width: 1999px) {
+
+	.carousel-item {
+  height: 600px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 769px)  {
+
+	.carousel-item {
+  height: 400px;
+}
+}
+	@media screen and (max-width: 499px)  {
+
+	.carousel-item {
+  height: 300px;
+}
+}
